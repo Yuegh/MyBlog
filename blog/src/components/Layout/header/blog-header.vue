@@ -16,7 +16,7 @@ const headerState = reactive({
   headerClass: "",
   activeIndex: 0,
 });
-
+ 
 const getPath = computed(() => {
   return route.path;
 });
@@ -155,9 +155,7 @@ onMounted(() => {
             <el-menu-item index="/talk"><i class="iconfont icon-speechbubble"></i> 说说</el-menu-item>
             <el-menu-item index="/message/list"><i class="iconfont icon-liuyan"></i> 留言</el-menu-item>
             <el-menu-item v-if="getUserInfo.id" index="/logout"><i class="iconfont icon-tuichudenglu"></i> 退出</el-menu-item>
-            <!-- <el-sub-menu index="/menu">
-              <template #title><i class="iconfont icon-menu21"></i> 菜单</template>
-            </el-sub-menu> -->
+          
           </el-menu>
         </el-drawer>
         <SwitchTheme />

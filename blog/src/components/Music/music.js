@@ -9,12 +9,7 @@ export const PLAYTYPE = {
   TOP: "TOP", // 当前歌曲排行榜列表歌曲
 };
 
-/*
- * @author: Zhang Yuming
- * @date: 2023-07-07 16:53:05
- * @params: index 下标 len 歌曲数组长度
- * @description: 随机播放返回不重复的下标
- */
+
 const returnRandomNoRepeat = (index, len) => {
   if (len == 1) {
     return index;
@@ -27,12 +22,7 @@ const returnRandomNoRepeat = (index, len) => {
     return res;
   }
 };
-/*
- * @author: Zhang Yuming
- * @date: 2023-07-04 10:09:57
- * @params: len 歌曲列表长度 index 当前歌曲下标 playType 播放模式 isPlayNext 是下一首还是上一首
- * @description: 返回下一首播放的歌曲
- */
+
 export function getNextMusic(len, index, playType, isPlayNext) {
   switch (playType) {
     // 随机
@@ -80,12 +70,7 @@ export function addZero(time) {
   return time;
 }
 
-/*
- * @author: Zhang Yuming
- * @date: 2023-06-26 10:25:43
- * @params: time 时间 s
- * @description: 返回歌曲时间
- */
+
 export function calcMusicTime(time) {
   // 这里就按照分和秒来
   let minutes = 0,
@@ -101,12 +86,7 @@ export function calcMusicTime(time) {
   return `${addZero(minutes)}:${addZero(second)}`;
 }
 
-/*
- * @author: Zhang Yuming
- * @date: 2023-06-26 16:26:53
- * @params: curent 播放到哪儿了 durattion 总时长
- * @description: 计算歌曲播放百分比
- */
+
 export function calcMusicSchedule(current, duration) {
   return Math.round((current / duration) * 1000) / 10;
 }

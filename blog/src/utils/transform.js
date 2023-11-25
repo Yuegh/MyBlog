@@ -40,12 +40,6 @@ const transform = (root, boxList = [], rootMargin = "") => {
   return observe;
 };
 
-/*
- * @author: Zhang Yuming
- * @date: 2023-07-10 15:25:25
- * @params: root 根元素 boxList 元素列表
- * @description:
- */
 const unObserveBox = (observe, boxList) => {
   boxList.length &&
     boxList.forEach((box) => {
