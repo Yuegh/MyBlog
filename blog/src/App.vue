@@ -8,7 +8,7 @@ import { ElNotification } from "element-plus";
 import { storeToRefs } from "pinia";
 import { user, staticData } from "@/store/index.js";
 
-import MusicPlayer from "@/components/Music/index";
+// import MusicPlayer from "@/components/Music/index";
 import BackTop from "@/components/BackTop/index";
 
 const userStore = user();
@@ -92,7 +92,7 @@ onMounted(async () => {
     <router-view></router-view>
     <BackTop :right="backTopProps.right" :svgWidth="backTopProps.svgWidth" :rotateDeg="-42" />
     <i v-if="showGoBack" class="iconfont icon-fanhui" @click="goBack"></i>
-    <MusicPlayer />
+    <!-- <MusicPlayer /> -->
   </div>
 </template>
 

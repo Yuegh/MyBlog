@@ -17,7 +17,14 @@ html.dark {
   }
 
   .layout {
-    background: linear-gradient(90deg, #413939 1%, #483e48 10.2%, #4b4552 19.6%, #3a3a45 36.8%, #364040 62.2%, #3b4146 88.9%, #4a4242 99%) !important;
+    // background: linear-gradient(90deg, #413939 1%, #483e48 10.2%, #4b4552 19.6%, #3a3a45 36.8%, #364040 62.2%, #3b4146 88.9%, #4a4242 99%) !important;
+    background: #0F2027;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
 
   .info-avatar {
@@ -36,6 +43,7 @@ html.dark {
 
   .right-side .info-card {
     .common-menu {
+
       .label,
       .value {
         color: var(--dark-font-color);
@@ -43,6 +51,7 @@ html.dark {
     }
 
     .info-card {
+
       .git-ee2-text,
       .git-ee2 .iconfont {
         color: var(--dark-font-color);
@@ -145,7 +154,7 @@ html.dark {
     color: var(--dark-font-color) !important;
   }
 
-  .md-editor-catalog-active > span {
+  .md-editor-catalog-active>span {
     color: var(--primary) !important;
   }
 
@@ -162,6 +171,7 @@ html.dark {
       background-color: #57616f;
     }
   }
+
   .grey {
     color: #57616f !important;
   }
@@ -193,6 +203,7 @@ html.dark {
   .category-item .left .bottom {
     background: rgba(0, 0, 0, 0.1);
   }
+
   .category-item .left .top {
     background: rgba(0, 0, 0, 0.1);
   }
@@ -213,6 +224,7 @@ html.dark {
   .music {
     background-color: #3d3841;
   }
+
   .lyric-mask {
     background-color: #3d3841;
   }
@@ -220,6 +232,7 @@ html.dark {
   .icon-arrowdown {
     color: #fafafa;
   }
+
   .icon-arrowup {
     color: #fafafa;
   }
@@ -236,11 +249,13 @@ html.dark {
     border: 2px #fafafa solid;
     background-color: rgb(87, 86, 86);
   }
+
   .coffee_cup:after {
     border: 2px #fafafa solid;
     border-left: none;
     border-radius: 0px 20px 20px 0px;
   }
+
   .coffee_cup:before {
     background-color: #fafafa;
     box-shadow: 5px 0px 0px 0px #fafafa, 5px -7px 0px 0px #fafafa, 10px 0px 0px 0px #fafafa;
@@ -261,9 +276,11 @@ html.dark {
       color: #000;
       background-color: rgba(255, 255, 255, 0.2);
     }
+
     .time {
       color: #000;
     }
+
     .message-comment {
       color: #000;
     }
@@ -277,12 +294,14 @@ html.dark {
       color: #000;
       background-color: rgba(255, 255, 255, 0.3);
     }
+
     .index-tag {
       color: #000;
     }
   }
 
   .message {
+
     .message-title,
     .type-writer {
       color: rgba(255, 255, 255, 0.5);
@@ -297,6 +316,7 @@ html.dark {
     color: #fff;
     background-color: rgba(29, 30, 31, 0.3);
   }
+
   .observer {
     color: #676767;
   }

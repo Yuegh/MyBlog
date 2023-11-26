@@ -61,7 +61,15 @@ div:focus {
 }
 
 .layout {
-  background: linear-gradient(90deg, #ffffff 1%, #ead2ea 10.2%, #e4d5ee 19.6%, #d1def3 36.8%, #b5dee5 62.2%, #cfebf3 88.9%, #ffffff 99%) !important;
+  // background: linear-gradient(90deg, #ffffff 1%, #ead2ea 10.2%, #e4d5ee 19.6%, #d1def3 36.8%, #b5dee5 62.2%, #cfebf3 88.9%, #ffffff 99%) !important;
+  background: #3D7EAA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFE47A, #3D7EAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
+  
+  
+
 }
 .gradient {
   background: rgb(255, 255, 255, 0.7);
@@ -75,11 +83,12 @@ div:focus {
   z-index: 2001;
   width: 100%;
   height: 3.6rem;
-  background-color: #fff;
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: 0px -1px 3px var(--primary);
-  background: rgb(255, 255, 255, 0.7);
+  backdrop-filter: blur(14px) saturate(74%);
+  -webkit-backdrop-filter: blur(14px) saturate(74%);
+  background-color: rgba(255, 255, 255, 0.49);
 }
 .main_box {
   box-sizing: border-box;

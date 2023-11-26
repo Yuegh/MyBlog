@@ -65,7 +65,7 @@ const logOut = () => {
 
 // 顶部导航固定
 const scroll = () => {
-  let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+  let scrollTop = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
   const { startScrollTop } = headerState;
   if (scrollTop <= 50) {
     headerState.headerClass = "fixed-header";
@@ -91,7 +91,7 @@ onMounted(() => {
     <div class="pc_menu flex_r_between">
       <div class="sub-avatar">
         <router-link v-if="getBlogAvatar" to="/"><el-avatar class="el-avatar" :src="getBlogAvatar" /> </router-link>
-        <MessageBox class="ml-[10px]" v-if="getUserInfo.id" :user-id="getUserInfo.id" type="pc" />
+        <!-- <MessageBox class="ml-[10px]" v-if="getUserInfo.id" :user-id="getUserInfo.id" type="pc" /> -->
       </div>
       <div class="flex_r_around">
         <BlogSearch></BlogSearch>
