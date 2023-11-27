@@ -64,9 +64,13 @@ div:focus {
   background: #3D7EAA;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #FFE47A, #3D7EAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("~@/assets/img/lightBG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .gradient {
-  background: rgb(255, 255, 255, 0.7);
+  // background: rgb(255, 255, 255, 0.7);
   background: linear-gradient(120deg, #f8feff, #dffbff, #faedff, #e0eeff, #f5f5d2, #fffff9);
 }
 
