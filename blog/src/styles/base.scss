@@ -60,6 +60,7 @@ div:focus {
 }
 
 .layout {
+  //渐变色背景 
   // background: linear-gradient(90deg, #ffffff 1%, #ead2ea 10.2%, #e4d5ee 19.6%, #d1def3 36.8%, #b5dee5 62.2%, #cfebf3 88.9%, #ffffff 99%) !important;
   background: #3D7EAA;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
@@ -73,6 +74,14 @@ div:focus {
   // background: rgb(255, 255, 255, 0.7);
   background: linear-gradient(120deg, #f8feff, #dffbff, #faedff, #e0eeff, #f5f5d2, #fffff9);
 }
+.el-card{
+  box-shadow:var(--light--card-box-shadow) ;
+}
+
+.card-hover:hover{
+  box-shadow:var(--light--card-hover-box-shadow);
+
+}
 
 .header_box {
   position: fixed;
@@ -84,9 +93,7 @@ div:focus {
   overflow: hidden;
   box-sizing: border-box;
   box-shadow: 0px -1px 3px var(--primary);
-  backdrop-filter: blur(14px) saturate(74%);
-  -webkit-backdrop-filter: blur(14px) saturate(74%);
-  background-color: rgba(255, 255, 255, 0.49);
+  background-color: rgba(185, 217, 230, 0.377);
 }
 .main_box {
   box-sizing: border-box;
@@ -244,9 +251,10 @@ div:focus {
 @media screen and (min-width: 768px) {
   .home_center_box {
     padding-top: 100px;
-    max-width: 1200px;
+    max-width: 1450px;
     margin: 0 auto;
     min-height: calc(100vh - 128px);
+    display: flex;
   }
   .center_box {
     padding: 2.8rem 10px;
@@ -256,12 +264,16 @@ div:focus {
   }
   .article_box {
     padding: 2.8rem 10px;
-    max-width: 1200px;
+    // max-width: 1200px;
+    width: 90%;
     margin: 0 auto;
     min-height: calc(100vh - 28rem);
+    background: linear-gradient(to right, #c6ffdda9, #fbd886ad, rgba(121, 247, 247, 0.678))
+
   }
   .right-side-space {
     padding: 7.5px 1.875px !important;
+    // margin-right: 5rem;
   }
   .mobile_menu {
     display: none;

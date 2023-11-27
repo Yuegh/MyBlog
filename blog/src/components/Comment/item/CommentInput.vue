@@ -2,7 +2,6 @@
 import { ref, watch, onMounted } from "vue";
 import { debounce } from "@/utils/tool";
 import { keepLastIndex, getCurrentIndex } from "../tool.js";
-import IconList from "./IconList.vue";
 
 const emit = defineEmits(["update:inputText", "publish"]);
 
@@ -92,7 +91,6 @@ defineExpose({
     </div>
     <div v-if="showPublish" class="!mt-[0.5rem] flex justify-between items-center animate__animated animate__fadeIn">
       <div class="cursor-pointer">
-        <IconList @open="clickIconList" @select-icon="selectIcon" />
       </div>
       <div v-if="inputText">
         <el-button type="danger" class="clear-btn" @click="clear">清空</el-button>

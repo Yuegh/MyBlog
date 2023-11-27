@@ -1,8 +1,4 @@
-<!--
-* @Author: Zhang Yuming
-* @Date: 2023-08-08 10:59:19
-* @Description: 发布/编辑留言页面
--->
+
 <script setup>
 import { ref, reactive, onMounted, h } from "vue";
 import { useRouter, useRoute } from "vue-router";
@@ -189,9 +185,9 @@ onMounted(async () => {
 <template>
   <div class="message">
     <div class="center_box !pt-[80px]">
-      <div class="flex items-center justify-center !h-[1rem]">
+      <!-- <div class="flex items-center justify-center !h-[1rem]">
         <TypeWriter size="1.2rem" :typeList="['世间真假，皆我所求，苦与乐，都可奉酒。']"></TypeWriter>
-      </div>
+      </div> -->
       <el-card class="!mt-[2rem]">
         <div class="!h-[22rem]" :style="{ backgroundColor: form.bg_color }">
           <div class="top" :style="{ backgroundImage: form.bg_url ? `url(${form.bg_url})` : '' }">

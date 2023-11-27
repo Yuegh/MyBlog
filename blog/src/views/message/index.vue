@@ -218,9 +218,9 @@ onBeforeUnmount(() => {
     </div>
     <div class="message-header">
       <div class="message-title">留言板</div>
-      <div class="flex items-center !h-[5rem]">
+      <!-- <div class="flex items-center !h-[5rem]">
         <TypeWriter size="1.2rem" :typeList="['生活原本沉闷，但跑起来就会有风!']"></TypeWriter>
-      </div>
+      </div> -->
     </div>
     <div class="message-body center_box">
       <div class="search-tab" @mousedown="mouseDown" @mouseleave="mouseLeave">
@@ -284,7 +284,7 @@ onBeforeUnmount(() => {
         </el-row>
       </el-skeleton>
       <div class="observer">
-        {{ total == 0 ? "这片土地需要你来开辟" : messageList.length >= total ? "暂无更多" : "下拉加载更多" }}
+        {{ total == 0 ? "诸君请畅所欲言" : messageList.length >= total ? "暂无更多" : "下拉加载更多" }}
       </div>
     </div>
   </div>

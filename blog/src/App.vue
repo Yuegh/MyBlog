@@ -8,7 +8,6 @@ import { ElNotification } from "element-plus";
 import { storeToRefs } from "pinia";
 import { user, staticData } from "@/store/index.js";
 
-// import MusicPlayer from "@/components/Music/index";
 import BackTop from "@/components/BackTop/index";
 
 const userStore = user();

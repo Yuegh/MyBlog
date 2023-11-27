@@ -52,7 +52,7 @@ export const getUserInfoById = (id) => {
 /** 图片上传 */
 /** 图片上传接口 */
 export const imgUpload = async (data) => {
-  // 文件压缩 太大了上传不了，我的服务器比较垃圾
+  // 文件压缩 太大了上传不了
   let res;
   // 没有raw.size 就表示已经压缩过了（多图片上传那里我压缩了一次） 有的话小于800不用压缩
   if (data.raw.size > 800) {

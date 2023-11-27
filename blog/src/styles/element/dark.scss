@@ -15,6 +15,9 @@ html.dark {
       color: var(--dark-font-color);
     }
   }
+ .title,span{
+  color: white;
+ }
 
   .layout {
     // background: linear-gradient(90deg, #413939 1%, #483e48 10.2%, #4b4552 19.6%, #3a3a45 36.8%, #364040 62.2%, #3b4146 88.9%, #4a4242 99%) !important;
@@ -29,6 +32,15 @@ html.dark {
     background-position: center;
     background-repeat: no-repeat;
 
+  }
+  .el-card{
+    box-shadow: var(--dark--card-box-shadow);
+  }
+  .card-hover:hover{
+    box-shadow: var(--dark--card-hover-box-shadow);
+  }
+  .article_box {
+    background: linear-gradient(to right, #aa4b6ba0, #6b6b839f, #3b8c9996)
   }
 
   .info-avatar {

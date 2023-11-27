@@ -11,7 +11,7 @@ defineProps({
   },
   runtime: {
     type: [String, Number],
-    default: "两年半",
+    default: "史前",
   },
   loading: {
     type: Boolean,
@@ -50,7 +50,8 @@ onBeforeUnmount(() => {
 <template>
   <div class="right-side">
     <el-row>
-      <el-col :span="24" class="right-side-space">
+      <!-- 信息 -->
+      <el-col :span="19" class="right-side-space">
         <el-card class="info-card card-hover animate__animated animate__fadeIn" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -62,7 +63,8 @@ onBeforeUnmount(() => {
           </el-skeleton>
         </el-card>
       </el-col>
-      <el-col :xs="0" :sm="24" class="right-side-space">
+      <!-- 公告 -->
+      <el-col :xs="0" :sm="19" class="right-side-space">
         <el-card class="right-card card-hover flex_c_center animate__animated animate__fadeIn" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -76,7 +78,8 @@ onBeforeUnmount(() => {
           </el-skeleton>
         </el-card>
       </el-col>
-      <el-col :xs="0" :sm="24" class="right-side-space">
+      <!-- 标签 -->
+      <el-col :xs="0" :sm="19" class="right-side-space">
         <el-card class="right-card card-hover flex_c_center animate__animated animate__fadeIn" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -92,7 +95,8 @@ onBeforeUnmount(() => {
           </el-skeleton>
         </el-card>
       </el-col>
-      <el-col :xs="0" :sm="24" class="right-side-space">
+      <!-- 网站资讯 -->
+      <el-col :xs="0" :sm="19" class="right-side-space">
         <el-card class="right-card card-hover flex_c_center" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -125,10 +129,9 @@ onBeforeUnmount(() => {
 
 <style lang="scss" scoped>
 .right-side {
-  width: 100%;
 
   .info-card {
-    height: 29rem;
+    height: 27.5rem;
   }
 
   .right-card {
