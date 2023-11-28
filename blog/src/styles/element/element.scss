@@ -1,9 +1,8 @@
 .el-card {
   border: none;
   border-radius: 5px 5px 8px 8px;
-  box-shadow: var(--card-box-shadow) !important;
-  background: rgb(255, 255, 255, 0.3);
   transition: all 0.3s;
+  width: 90%;
   &__body {
     width: 100%;
   }
@@ -13,10 +12,7 @@
   }
 }
 
-.card-hover:hover {
-  box-shadow: var(--card-hover-box-shadow) !important;
-  transform: translateY(-3px);
-}
+
 
 .el-dialog {
   .el-dialog__header {

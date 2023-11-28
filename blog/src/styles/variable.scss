@@ -11,8 +11,18 @@
   --border-color: #7ec4f2;
   --hr-border: #a9d5f4;
   --top: #f26c60;
-  --card-box-shadow: 0 3px 6px 3px rgba(7, 17, 27, 0.06);
-  --card-hover-box-shadow: 0 3px 6px 3px rgba(7, 17, 27, 0.15);
+  // 明亮主题
+  --light-card-bg-color:#f0eeef;
+  --light-card-box-shadow: -3px -5px 2px rgb(255, 255, 255),
+  3px 6px 3px rgba(0, 0, 0, 0.35);
+  --light-card-hover-box-shadow:3px 6px 3px rgba(0, 0, 0, 0.35),
+  -4px -6px 2px rgb(255, 255, 255);
+  // 暗黑主题
+  --dark-card-bg-color:#333333;
+  --dark-card-box-shadow: -3px -6px 3px rgba(84, 84, 84, 0.547),
+  3px 6px 3px rgba(0, 0, 0, 0.759);
+  --dark-card-hover-box-shadow: -5px -8px 3px rgba(84, 84, 84, 0.547),
+  5px 8px 3px rgba(0, 0, 0, 0.784);
 }
 
 @font-face {

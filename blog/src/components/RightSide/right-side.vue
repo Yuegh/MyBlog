@@ -49,8 +49,8 @@ onBeforeUnmount(() => {
 
 <template>
   <div class="right-side">
-    <el-row>
-      <el-col :span="24" class="right-side-space">
+    <el-row class="cards">
+      <el-col :span="24" class="right-side-space card red">
         <el-card class="info-card card-hover animate__animated animate__fadeIn" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -62,7 +62,7 @@ onBeforeUnmount(() => {
           </el-skeleton>
         </el-card>
       </el-col>
-      <el-col :xs="0" :sm="24" class="right-side-space">
+      <el-col :xs="0" :sm="24" class="right-side-space card blue">
         <el-card class="right-card card-hover flex_c_center animate__animated animate__fadeIn" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -76,7 +76,7 @@ onBeforeUnmount(() => {
           </el-skeleton>
         </el-card>
       </el-col>
-      <el-col :xs="0" :sm="24" class="right-side-space">
+      <el-col :xs="0" :sm="24" class="right-side-space card green">
         <el-card class="right-card card-hover flex_c_center animate__animated animate__fadeIn" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -92,7 +92,7 @@ onBeforeUnmount(() => {
           </el-skeleton>
         </el-card>
       </el-col>
-      <el-col :xs="0" :sm="24" class="right-side-space">
+      <!-- <el-col :xs="0" :sm="24" class="right-side-space">
         <el-card class="right-card card-hover flex_c_center" shadow="hover">
           <el-skeleton :loading="loading" animated>
             <template #template>
@@ -118,17 +118,55 @@ onBeforeUnmount(() => {
             </template>
           </el-skeleton>
         </el-card>
-      </el-col>
+      </el-col> -->
     </el-row>
   </div>
 </template>
+
+<style>
+.cards {
+  gap: 15px;
+}
+
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: .7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+</style>
+
 
 <style lang="scss" scoped>
 .right-side {
   width: 100%;
 
   .info-card {
-    height: 29rem;
+    height: 27rem;
   }
 
   .right-card {

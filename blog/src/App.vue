@@ -92,7 +92,6 @@ onMounted(async () => {
     <router-view></router-view>
     <BackTop :right="backTopProps.right" :svgWidth="backTopProps.svgWidth" :rotateDeg="-42" />
     <i v-if="showGoBack" class="iconfont icon-fanhui" @click="goBack"></i>
-    <!-- <MusicPlayer /> -->
   </div>
 </template>
 

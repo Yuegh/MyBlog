@@ -121,7 +121,17 @@ onBeforeUnmount(() => {
 <template>
   <div class="home_center_box">
     <el-row>
-      <el-col :xs="24" :sm="18">
+      <div class="water">
+        <div class="card"></div>
+      </div>
+   
+      <!-- 信息 -->
+      <el-col :xs="0" :sm="5">
+        <!-- 博客我的信息 -->
+        <RightSide :configDetail="configDetail" :tags="tags" :runtime="runtime" :loading="rightSizeLoading" />
+      </el-col>
+      <!-- 文章 -->
+      <el-col :xs="24" :sm="14">
         <el-card class="mobile-top-card mobile-card info-card animate__animated animate__fadeIn" shadow="hover">
           <el-skeleton :loading="rightSizeLoading" animated>
             <template #template>
@@ -160,13 +170,13 @@ onBeforeUnmount(() => {
           </el-skeleton>
         </el-card>
       </el-col>
-      <el-col :xs="0" :sm="6">
-        <!-- 博客我的信息 -->
-        <RightSide :configDetail="configDetail" :tags="tags" :runtime="runtime" :loading="rightSizeLoading" />
-      </el-col>
+    <el-col :xs="0" :sm="5">
+      <el-calendar v-model="value" />
+    </el-col>
     </el-row>
   </div>
 </template>
+
 
 <style lang="scss" scoped>
 .mobile-top-card {
