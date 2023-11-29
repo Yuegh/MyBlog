@@ -4,7 +4,6 @@ import { useRouter } from "vue-router";
 import { storeToRefs } from "pinia";
 
 import { Edit, Delete, Search } from "@element-plus/icons-vue";
-import TypeWriter from "@/components/TypeWriter/type-writer";
 
 import { getMessageList, likeMessage, cancelLikeMessage, deleteMessage, getMessageTag } from "@/api/message";
 import { addLike, cancelLike } from "@/api/like";
@@ -219,7 +218,6 @@ onBeforeUnmount(() => {
     <div class="message-header">
       <div class="message-title">留言板</div>
       <div class="flex items-center !h-[5rem]">
-        <TypeWriter size="1.2rem" :typeList="['生活原本沉闷，但跑起来就会有风!']"></TypeWriter>
       </div>
     </div>
     <div class="message-body center_box">

@@ -11,7 +11,7 @@
     <span class="blog-name">{{ configDetail.blog_name }} </span>
   </div>
   <div class="personal-say">{{ configDetail.personal_say }}</div>
-  <div class="common-menu flex_r_between">
+  <!-- <div class="common-menu flex_r_between">
     <span class="flex_c_center" @click="operate('goToArchives')">
       <span class="common-menu__label to_pointer">文章</span>
       <span class="common-menu__value to_pointer">{{ configDetail.articleCount }}</span>
@@ -24,23 +24,24 @@
       <span class="common-menu__label to_pointer">标签</span>
       <span class="common-menu__value to_pointer">{{ configDetail.tagCount }}</span>
     </span>
-  </div>
-  <div class="git-ee flex_r_around">
+  </div> -->
+  <!-- <div class="git-ee flex_r_around">
     <span class="git-ee__item button-animated" @click="operate('openLink', configDetail.git_ee_link)">
       <i class="iconfont icon-gitee2"> </i>
       <span class="git-ee__item-text"> My Gitee</span>
     </span>
-  </div>
+  </div> -->
   <div class="personal-link flex_r_around">
     <i class="iconfont icon-bilibili-line to_pointer" @click="operate('openLink', configDetail.bilibili_link)"></i>
     <i class="iconfont icon-github-fill to_pointer" @click="operate('openLink', configDetail.github_link)"></i>
+    <i class="iconfont icon-gitee2 to_pointer" @click="operate('openLink', configDetail.git_ee_link)"></i>
 
-    <el-popover placement="top" trigger="hover">
+    <!-- <el-popover placement="top" trigger="hover">
       <el-image style="width: 100%; height: 100%" :src="configDetail.we_chat_link"></el-image>
       <template #reference>
         <i class="iconfont icon-weixin1 to_pointer"></i>
       </template>
-    </el-popover>
+    </el-popover> -->
     <el-popover placement="top" trigger="hover">
       <el-image style="width: 100%; height: 100%" :src="configDetail.qq_link"></el-image>
       <template #reference>

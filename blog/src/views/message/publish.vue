@@ -1,8 +1,4 @@
-<!--
-* @Author: Zhang Yuming
-* @Date: 2023-08-08 10:59:19
-* @Description: 发布/编辑留言页面
--->
+
 <script setup>
 import { ref, reactive, onMounted, h } from "vue";
 import { useRouter, useRoute } from "vue-router";

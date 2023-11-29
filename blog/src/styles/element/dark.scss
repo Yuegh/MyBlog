@@ -40,8 +40,14 @@ html.dark {
       left: 60px;
     }
     }
-  
-
+    .el-pager{
+      li{
+        box-shadow: 2px 2px 2px rgba(39, 39, 39, 0.819),-2px -2px 2px rgb(58, 58, 58) !important;
+      }
+    }
+    .btn-prev,.btn-next{
+      box-shadow: 2px 2px 2px rgba(39, 39, 39, 0.819),-2px -2px 2px rgb(58, 58, 58) !important;
+    }
     .el-calendar{
       border-radius: 20px;
       background-color: var(--dark-card-bg-color) !important;

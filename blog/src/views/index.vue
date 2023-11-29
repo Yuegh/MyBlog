@@ -56,8 +56,8 @@ const goMenu = (val) => {
 .home_bg {
   width: 100%;
   height: 100vh;
-  background: rgba(9, 9, 9, 0.9);
   // background-image: url(../../public/bg.png);
+  background-image: linear-gradient(to right, #3a3b3e, #3d414a, #404757, #414d64, #425471, #40526f, #3e516d, #3c4f6b, #37455a, #323b49, #2d3139, #27282a);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -75,6 +75,7 @@ const goMenu = (val) => {
     justify-content: space-around;
     height: 40rem;
     span{
+      background-color: #2d3139;
       display: block;
       display: flex;
       justify-content: center;
@@ -86,25 +87,35 @@ const goMenu = (val) => {
       width: 22rem;
       height: 8rem;
       border-radius: 10px;
-      box-shadow: var(--dark-card-box-shadow);
+      box-shadow: -3px -6px 8px rgba(100, 133, 231, 0.547),
+  3px 6px 8px rgba(83, 129, 155, 0.941);
 
     }
   }
 }
 
 .shadow{
+  white-space:nowrap;
+
+  background-color: #2d3139;
   width: 22rem;
   height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  box-shadow: var(--dark-card-box-shadow);
+  box-shadow: -3px -6px 8px rgba(100, 133, 231, 0.547),
+  3px 6px 8px rgba(83, 129, 155, 0.941);
+  .title{
+    color: rgb(167, 208, 247) !important;
+    
+  }
 }
 .card {
   position: relative;
   height: 300px;
   width: 230px;
+  filter: drop-shadow(0px 2px 1px rgb(119, 183, 233));
 }
 
 .card .boxshadow {
@@ -118,11 +129,12 @@ const goMenu = (val) => {
 }
 
 .card .main {
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: rgb(0, 145, 255);
-  background: linear-gradient(0deg, rgb(0, 32, 62) 0%, rgb(0, 51, 255) 60%, rgb(0, 30, 62) 100%);
+  background: linear-gradient(0deg, rgba(2, 29, 54, 0.74) 0%, rgb(0, 51, 255) 60%, rgb(0, 30, 62) 100%);
   position: relative;
   -webkit-clip-path: polygon(0 40px, 40px 0, calc(100% - 40px) 0, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0 calc(100% - 40px));
   clip-path: polygon(0 40px, 40px 0, calc(100% - 40px) 0, 100% 40px, 100% calc(100% - 40px), calc(100% - 40px) 100%, 40px 100%, 0 calc(100% - 40px));
@@ -139,9 +151,10 @@ const goMenu = (val) => {
   width: 0px;
   height: 0px;
   z-index: 2;
-  border-top: 115px solid rgb(0, 0, 0);
+  border-top: 115px solid rgba(7, 11, 24, 0.942);
   border-left: 115px solid transparent;
   border-right: 115px solid transparent;
+  // filter: drop-shadow(2px 3px 6px rgb(167, 222, 247));
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
@@ -151,7 +164,7 @@ const goMenu = (val) => {
   top: 0;
   transform: translateX(-50%);
   height: 101%;
-  background: black;
+  background: rgb(7, 11, 24, 0.9);
   -webkit-clip-path: polygon(0% 0%, 50% 0, 95% 45%, 100% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 50% 0, 95% 45%, 100% 100%, 0% 100%);
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) 1s;
@@ -187,14 +200,15 @@ const goMenu = (val) => {
 
 .card .main .button-container .button {
   width: 3.125rem;
+  height: 2.6rem;
   position: absolute;
   transform: translateX(-50%);
   padding: 5px 10px;
   -webkit-clip-path: polygon(0 0, 100% 0, 81% 100%, 21% 100%);
   clip-path: polygon(0 0, 100% 0, 81% 100%, 21% 100%);
-  background: rgb(19, 18, 18);
+  background: rgb(22, 25, 33);
   border: none;
-  color: rgb(52, 150, 249);
+  color: rgb(129, 189, 250);
   display: grid;
   place-content: center;
   transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);

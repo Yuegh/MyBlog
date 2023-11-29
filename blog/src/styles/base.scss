@@ -67,7 +67,16 @@ div:focus {
     height: 3.125rem;
   }
 }
-
+.btn-prev,.btn-next{
+  box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.819),-2px -2px 2px rgb(255, 255, 255) !important;
+}
+.el-pager{
+  li{
+    box-shadow: 2px 2px 2px rgba(68, 68, 68, 0.819),-2px -2px 2px rgb(255, 255, 255);
+    background-color: rgb(123, 123, 238) !important;
+    color: white !important;
+  }
+}
 .water{
   position: absolute;
   top: 13rem;
@@ -257,12 +266,26 @@ span,.personal-say,.el-menu-item,.el-tooltip__trigger,.icon-xiaoxi {
 
 // 手机
 @media screen and (max-width: 768px) {
+  .el-card.is-hover-shadow,.water,.el-affix,.command,.el-calendar{
+    display: none !important;
+}
+.article-col,.el-col{
+  display: flex;
+  justify-content: center;
+}
+.el-image__inner {
+  width: 70% !important;
+  height: 70% !important;
+  border-radius: 10px;
+  box-shadow: 9px 9px 10px #5c5b5ba8, -3px -3px 2px #e9e9e9 !important;
+}
   .home_center_box {
     padding-top: 83px;
     max-width: 1000px;
     margin: 0 auto;
     min-height: calc(100vh - 128px);
   }
+
   .center_box {
     padding: 1.6rem 10px;
     max-width: 1000px;
@@ -279,10 +302,13 @@ span,.personal-say,.el-menu-item,.el-tooltip__trigger,.icon-xiaoxi {
     height: 100%;
     padding: 0 10px;
   }
-  .pc_menu {
-    display: none;
-  }
-  
+
+.el-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .el-dialog {
     width: 100% !important;
     margin-top: 0 !important;

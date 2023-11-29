@@ -1,6 +1,5 @@
 <script setup>
 import { useRouter } from "vue-router";
-import { numberFormate } from "@/utils/tool";
 import { onMounted, onBeforeUnmount } from "vue";
 import { transform, unObserveBox } from "@/utils/transform";
 
@@ -166,7 +165,7 @@ onBeforeUnmount(() => {
   width: 100%;
 
   .info-card {
-    height: 27rem;
+    height: 20rem;
   }
 
   .right-card {
