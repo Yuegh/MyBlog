@@ -103,8 +103,10 @@ onMounted(() => {
             <el-menu-item index="/resources/front"><i class="iconfont icon-folder"></i> 前端</el-menu-item>
             <el-menu-item index="/resources/back"><i class="iconfont icon-houduankaifa"></i> 后端</el-menu-item>
             <el-menu-item index="/resources/link"><i class="iconfont icon-pengyouquan"></i> 友链</el-menu-item>
+            <!-- <el-menu-item index="/music"><i class="iconfont icon-bofangduilie"></i> 音乐</el-menu-item> -->
           </el-sub-menu>
           <el-menu-item index="/category"><i class="iconfont icon-sort"></i> 分类</el-menu-item>
+          <!-- <el-menu-item index="/tag"><i class="iconfont icon-label_fill"></i> 标签</el-menu-item> -->
           <el-menu-item index="/photoAlbum"><i class="iconfont icon-paper"></i> 相册</el-menu-item>
           <el-menu-item index="/talk"><i class="iconfont icon-speechbubble"></i> 说说</el-menu-item>
           <el-menu-item index="/message/list"><i class="iconfont icon-liuyan"></i> 留言</el-menu-item>
@@ -118,6 +120,9 @@ onMounted(() => {
               <el-menu-item index="/logout"><i class="iconfont icon-tuichudenglu"></i> 退出</el-menu-item>
             </el-sub-menu>
           </div>
+          <!-- <el-sub-menu index="/menu">
+            <template #title><i class="iconfont icon-menu21"></i> 菜单</template>
+          </el-sub-menu> -->
         </el-menu>
         <SwitchTheme />
       </div>
@@ -150,6 +155,7 @@ onMounted(() => {
             <el-menu-item index="/talk"><i class="iconfont icon-speechbubble"></i> 说说</el-menu-item>
             <el-menu-item index="/message/list"><i class="iconfont icon-liuyan"></i> 留言</el-menu-item>
             <el-menu-item v-if="getUserInfo.id" index="/logout"><i class="iconfont icon-tuichudenglu"></i> 退出</el-menu-item>
+          
           </el-menu>
         </el-drawer>
         <SwitchTheme />
@@ -160,10 +166,6 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .header_box {
-  overflow: auto;
-  &::-webkit-scrollbar{
-    display: none;
-  }
   .sub-avatar {
     padding: 5px 0 0 0;
     display: flex;

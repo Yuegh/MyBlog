@@ -266,25 +266,15 @@ span,.personal-say,.el-menu-item,.el-tooltip__trigger,.icon-xiaoxi {
 
 // 手机
 @media screen and (max-width: 768px) {
-  .el-card.is-hover-shadow,.water,.el-affix,.command,.el-calendar{
-    display: none !important;
-}
-.article-col,.el-col{
-  display: flex;
-  justify-content: center;
-}
-.el-image__inner {
-  width: 70% !important;
-  height: 70% !important;
-  border-radius: 10px;
-  box-shadow: 9px 9px 10px #5c5b5ba8, -3px -3px 2px #e9e9e9 !important;
-}
   .home_center_box {
     padding-top: 83px;
     max-width: 1000px;
     margin: 0 auto;
     min-height: calc(100vh - 128px);
   }
+  .el-card.is-hover-shadow,.water,.pc_menu,.el-calendar,.el-affix,.command  {
+    display: none !important;
+}
 
   .center_box {
     padding: 1.6rem 10px;
@@ -302,13 +292,18 @@ span,.personal-say,.el-menu-item,.el-tooltip__trigger,.icon-xiaoxi {
     height: 100%;
     padding: 0 10px;
   }
-
-.el-image {
+.article-col,.el-col{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-
+.el-calendar {
+  width: 70% !important;
+  height: 70% !important;
+  // margin-left: 50px !important;
+  // margin-top: 40px !important;
+  border-radius: 10px;
+  box-shadow: 9px 9px 10px #5c5b5ba8, -3px -3px 2px #e9e9e9 !important;
+}
   .el-dialog {
     width: 100% !important;
     margin-top: 0 !important;
