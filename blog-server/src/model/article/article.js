@@ -36,7 +36,7 @@ const Article = seq.define(
     article_cover: {
       type: DataTypes.STRING(1234),
       require: false,
-      defaultValue: "	https://mrzym.gitee.io/blogimg/html/rabbit.png",
+      defaultValue: "https://picsum.photos/200",
       comment: "文章缩略图",
     },
     is_top: {

@@ -27,7 +27,7 @@ CREATE TABLE `blog_article` (
   `author_id` int DEFAULT '1' COMMENT '文章作者 不能为空',
   `category_id` int DEFAULT NULL COMMENT '分类id 不能为空',
   `article_content` text COMMENT '文章内容',
-  `article_cover` varchar(1234) DEFAULT '	https://mrzym.gitee.io/blogimg/html/rabbit.png' COMMENT '文章缩略图',
+  `article_cover` varchar(1234) DEFAULT '	https://picsum.photos/200' COMMENT '文章缩略图',
   `is_top` int DEFAULT '2' COMMENT '是否置顶 1 置顶 2 取消置顶',
   `status` int DEFAULT '1' COMMENT '文章状态  1 公开 2 私密 3 草稿箱',
   `type` int DEFAULT '1' COMMENT '文章类型 1 原创 2 转载 3 翻译',
@@ -110,8 +110,8 @@ CREATE TABLE `blog_comment` (
 DROP TABLE IF EXISTS `blog_config`;
 CREATE TABLE `blog_config` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `blog_name` varchar(55) DEFAULT '小张的博客' COMMENT '博客名称',
-  `blog_avatar` varchar(255) DEFAULT 'https://mrzym.gitee.io/blogimg/html/rabbit.png' COMMENT '博客头像',
+  `blog_name` varchar(55) DEFAULT '加肥猫博客' COMMENT '博客名称',
+  `blog_avatar` varchar(255) DEFAULT 'https://picsum.photos/200' COMMENT '博客头像',
   `avatar_bg` varchar(255) DEFAULT NULL COMMENT '博客头像背景图',
   `personal_say` varchar(255) DEFAULT NULL COMMENT '个人签名',
   `blog_notice` varchar(255) DEFAULT NULL COMMENT '博客公告',

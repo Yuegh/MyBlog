@@ -57,6 +57,7 @@ interface WheelEvent {
 
 interface ImportMetaEnv extends ViteEnv {
   __: unknown;
+
 }
 
 interface Fn<T = any, R = T> {

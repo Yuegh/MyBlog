@@ -16,8 +16,10 @@ class UserService {
     // 过滤敏感词
     nick_name = await filterSensitive(nick_name);
     // 随机生成昵称
-    nick_name = nick_name ? nick_name : randomNickname("小张的迷弟");
-    const avatar = "http://mrzym.top/online/9bb507f4bd065759a3d093d04.webp";
+    nick_name = nick_name ? nick_name : randomNickname("流浪猫");
+    // 此地址为随机生成图片
+    const avatar = "https://picsum.photos/200";
+
     const res = await User.create({ username, password, nick_name, qq, avatar, role: 2 });
 
     return res.dataValues;

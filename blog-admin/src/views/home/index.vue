@@ -92,11 +92,6 @@ onMounted(async () => {
         </el-card>
       </el-col>
     </el-row>
-    <div class="filings">
-      <a class="change-color" href="http://beian.miit.gov.cn/" target="_blank"
-        >蜀ICP备2023007772号</a
-      >
-    </div>
   </el-card>
 </template>
 

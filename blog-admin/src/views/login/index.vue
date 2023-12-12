@@ -196,11 +196,6 @@ onBeforeUnmount(() => {
         </div>
       </div>
     </div>
-    <div class="filings">
-      <a class="change-color" href="http://beian.miit.gov.cn/" target="_blank"
-        >蜀ICP备2023007772号</a
-      >
-    </div>
   </div>
 </template>
 

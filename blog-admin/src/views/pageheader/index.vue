@@ -14,7 +14,7 @@ import { imgUpload } from "@/api/site";
 import { message } from "@/utils/message";
 import { cloneDeep } from "@pureadmin/utils";
 import { routerList } from "./routerList";
-import { log } from "console";
+// import { log } from "console";
 
 const coverV = (rule, value, cb) => {
   if (!pageHeaderForm.coverList.length) {
